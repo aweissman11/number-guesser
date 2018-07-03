@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+  margin: 0;
+}
+header {
+  background-color: #404041;
+  text-align: center;
+  padding: 1.5rem 0; 
+  font-size: 1.5em;
+}
+body {
+  min-width: 460px;
+}
+h1 {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+h1 span {
+  font-weight: 700;
+  color: #ED458B;
+}
+form {
+  text-align: center;
+}
+#range-minimum, #range-maximum {
+  margin: 20px auto 5px auto;
+  width: 250px;
+  height: 40px;
+  font-size: 1em;
+  text-align: left;
+  color: #E6E7E8;
+  text-align: center;
+  border-radius: 20px;
+  border: solid;
+}
+.defaultRange {
+  text-align: center;
+}
+#number-entered {
+  margin: 15px auto;
+  width: 400px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: left;
+  color: #E6E7E8;
+  text-align: center;
+  border: solid;
+  border-color: #929497;
+}
+section.responses {
+  text-align: center;
+}
+p.range-paragraph {
+  font-weight: bold;
+}
+p.last-guess-was {
+  margin: 20px auto -10px auto;
+  font-size: 1.6em;
+}
+p.last-guess {
+  font-size: 100px;
+  color: #EB008B;
+}
+p.wrong-number {
+ font-size: 1.5em; 
+}
+p.guesses-left {
+  font-size: 1.5em;
+  margin: 0px auto 20px auto;
+}
+#reset-button {
+  text-align: center;
+  margin: auto auto 30px auto;
+}
+
+/*
+=========================================================
+BUTTONS
+=========================================================
+*/
+
+.game-link, #range-button, #submit-number, .clear-number, .reset-game {
+  color: #FFFFFF;
+  background-color: #929497;
+  border-radius: 20px;  
+}
+.game-link:hover, #range-button:hover, #submit-number:hover, .clear-number:hover, .reset-game:hover {
+  background-color: #EB008B;
+}
+.game-link:disabled, #range-button:disabled, #submit-number:disabled, .clear-number:disabled, .reset-game:disabled {
+  background: #D0D2D3;
+  color: #D0D2D3;
+}
+
+#submit-number {
+  width: 190px;
+  height: 40px;
+  font-size: 23px;
+}
+button.clear-number {
+  width: 190px;
+  height: 40px;
+  font-size: 23px; 
+}
+button.reset-game { 
+  width: 400px;
+  height: 40px;
+  font-size: 23px;
+}
+.game-link {
+  width: 100%;
+  padding: 2px 100px 5px;
+  height: 40px;
+  font-size: .75em;
+}
+
+
+
+
+
+
+
+
+
+

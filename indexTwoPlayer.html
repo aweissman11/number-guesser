@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="numberGameStyleTwo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+
+  <header>
+    <h1><span>Number</span> Guesser 2 Player</h1>
+    <a class="game-link" href="numberGameIndex.html">Play Single Player</a>
+  </header>
+<body>
+  <div class="functions-width">
+    <form class="range-functions">
+      <label for="range-minimum range-maximum">Submit your range:</label>
+      <input id="range-minimum" class="range-setting" type="number" placeholder="Min">
+      <input id="range-maximum" class="range-setting" type="number" placeholder="Max">
+      <p class="default-range">(Default range is 1-100)</p>
+      <button id="range-button">Submit Range</button>
+    </form>
+    <form class="guess-functions">
+      <section>
+        <p class='player-one-or-two'>Player One goes first</p>
+        <input id="number-entered" class="number-entered" type="number" maxlength="2" placeholder="Enter your guess"><br>
+        <button id="submit-number" class="submit-number" type="submit">Guess</button>
+        <button class="clear-number" type="submit" value="Clear" disabled="true">Clear</button>
+        <p id="error-message"></p>
+      </section>
+    </form>
+  </div>
+  <div>
+  <section class="responses">
+    <p class="last-guess-was">Guess a number, 1-100!</p>
+    <p class="last-guess">1-100</p>
+    <p class="range-paragraph">Current Range: 1 - 100</p>
+    <p class="wrong-number">You get 10 guesses</p>
+    <p class="guesses-left">Good luck!</p>
+  </section>
+  <form id="resetButton">
+    <button class="reset-game" type="submit" value="Reset" disabled="true">Reset</button>
+  </form>
+  <div class="scoreboard">
+  <table class="player-one-stats">
+    <thead>
+      <tr> <th colspan="2">Player One Stats</th> </tr></thead>
+    <tbody>
+      <tr> <td>Correct Guesses: </td>
+        <td class='player-one-wins'>0</td> </tr>
+      <tr> <td>Guesses Left: </td>
+        <td class='player-one-guesses-left'>10</td> </tr>
+    </tbody>
+  </table>  
+  <table class="player-two-stats">
+    <thead>
+      <tr> <th colspan="2">Player Two Stats</th> </tr> </thead>
+    <tbody>
+      <tr> <td>Correct Guesses: </td>
+        <td class='player-two-wins'>0</td> </tr>
+      <tr> <td>Guesses Left: </td>
+        <td class='player-two-guesses-left'>10</td> </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</body>
+
+<script src="twoPlayerNG.js"></script>
+
+
+
+
+
+</html>

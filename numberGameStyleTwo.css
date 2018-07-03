@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+  margin: 0;
+}
+header {
+  background-color: #404041;
+  text-align: center;
+  padding: 1.5rem 0; 
+  font-size: 1.5em;
+  width: 100%
+}
+body {
+  margin: auto;
+  min-width: 400px;
+}
+div.functions-width {
+  width: 800px;
+  margin: auto;
+}
+h1 {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+h1 span {
+  font-weight: 700;
+  color: #ED458B;
+} 
+#range-minimum, #range-maximum {
+  margin: 5px auto 5px auto;
+  width: 75px;
+  height: 40px;
+  font-size: 1em;
+  text-align: left;
+  color: #E6E7E8;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  border: solid;
+}
+
+form {
+  text-align: center;
+}
+label {
+  display: block;
+  margin: auto auto 5px;
+  font-weight: bold;
+}
+.default-range {
+  text-align: center;
+  font-weight: bold;
+}
+.range-paragraph {
+  color: #ED458B;
+  margin: auto auto 20px auto;
+  font-weight: bold;
+}
+.player-one-or-two {
+  margin: auto auto 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#number-entered {
+  margin: 0px auto 20px;
+  width: 250px;
+  height: 40px;
+  font-size: 1.5em;
+  text-align: left;
+  color: #E6E7E8;
+  text-align: center;
+  border: solid;
+  border-color: #929497;
+}
+.guess-functions {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  margin: 10px 10% auto auto;
+  height: 190px;
+  position: relative;
+  border-left: solid;
+  padding-left: 20px;
+}
+.range-functions{
+  width: 40%;
+  display: inline-block;
+  float: left;
+  margin: 30px auto auto 10%;
+  height: 170px;
+  position: relative;
+  left: 25px;
+}
+section.responses {
+  text-align: center;
+  display: block;
+}
+p.last-guess-was {
+  margin: auto auto -20px;
+  font-size: 1.6em;
+}
+p.last-guess {
+  font-size: 100px;
+  color: #EB008B;
+}
+p.wrong-number {
+ font-size: 1.5em; 
+}
+p.guesses-left {
+  font-size: 1.5em;
+  margin: 0px auto 20px auto;
+}
+#resetButton {
+  text-align: center;
+}
+.scoreboard {
+  max-width: 400px;
+  margin: 0px auto 40px;
+}
+.player-one-stats, .player-two-stats {
+  display: inline-block;
+  margin: auto;
+}
+.player-two-stats {
+  float: right;
+}
+
+/*
+=========================================================
+BUTTONS
+=========================================================
+*/
+
+.game-link, #range-button, #submit-number, .clear-number, .reset-game {
+  color: #FFFFFF;
+  background-color: #929497;
+  border-radius: 20px;  
+}
+.game-link:hover, #range-button:hover, #submit-number:hover, .clear-number:hover, .reset-game:hover {
+  background-color: #EB008B;
+}
+.game-link:disabled, #range-button:disabled, #submit-number:disabled, .clear-number:disabled, .reset-game:disabled {
+  background: #D0D2D3;
+  color: #D0D2D3;
+}
+/*.game-link:disabled:hover, #range-button:disabled:hover, #submit-number:disabled:hover, .clear-number:disabled:hover, .reset-game:disabled:hover {
+  background: black;
+  color: black;
+}*/
+.game-link {
+  width: 100%;
+  padding: 2px 100px 5px;
+  height: 40px;
+  font-size: .75em;
+}
+#range-button {
+  width: 190px;
+  height: 30px;
+  font-size: 1em;
+}
+#submit-number {
+  width: 190px;
+  height: 40px;
+  font-size: 23px;
+}
+button.clear-number {
+  width: 190px;
+  height: 40px;
+  font-size: 23px; 
+}
+button.reset-game {
+  width: 400px;
+  height: 40px;
+  font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="numberGameStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <h1><span>Number</span> Guesser 1 Player</h1>
+    <a class="game-link" href="indexTwoPlayer.html">Play with two Players</a>
+  </header>
+  <form>
+    <input id="range-minimum" class="range-setting" type="number" placeholder="Enter the minimum number">
+    <input id="range-maximum" class="range-setting" type="number" placeholder="Enter the maximum number">
+    <p class="default-range">(Default range is 1-100)</p>
+    <button id="range-button">Submit Range</button>
+  </form>
+  <form>
+    <section>
+      <p class='player-one-or-two'>Player One goes first</p>
+      <input id="number-entered" class="number-entered" type="number" maxlength="2" placeholder="Enter your guess"><br>
+      <button id="submit-number" class="submit-number" type="submit">Guess</button>
+      <button class="clear-number" type="submit" value="Clear" disabled="true">Clear</button>
+      <p id="error-message"></p>
+    </section>
+  </form>
+  <section class="responses">
+    <p class="range-paragraph">Range: 1 - 100</p>
+    <p class="last-guess-was">Guess a number, 1-100!</p>
+    <p class="last-guess">1-100</p>
+    <p class="wrong-number">You get 10 guesses</p>
+    <p class="guesses-left">Good luck!</p>
+    <p class="player-one-stats"></p>
+    <p class="player-two-stats"></p>
+  </section>
+  <form id="reset-button">
+    <button class="reset-game" type="submit" value="Reset" disabled="true">Reset</button>
+  </form>
+
+</body>
+
+<script src="numberScript.js"></script>
+
+
+
+
+
+</html>
