@@ -101,7 +101,7 @@ function randomIntFunction(rangeMinInt = 1, rangeMaxInt = 100) {
   console.log("random number: " + randomNumber);
   var showRange = 'Current Range: ' + rangeMinInt + ' - ' + rangeMaxInt;
   rangePGraph.innerText = showRange;
-  };
+};
 
 //On submit guess parse the guessed number and run:
     //ensure the entry is a valid number
@@ -172,13 +172,13 @@ function checkPlayerOneGuess() {
   if (parsedNum === randomNumber) {
     wrongNumber.innerHTML = 'BOOM! Player ONE wins! Guess again!';
     guessesLeft.innerText = 'MAXIMUM + 10, MINIMUM - 10';
-    rangeMinInt -= (10);
+    rangeMinInt -= 10;
     rangeMaxInt += (10);
     wins += 1;
     playerOneWins++;
     playerOneWinsClass.innerText = playerOneWins;
     randomIntFunction(rangeMinInt, rangeMaxInt);
-    } else if (playerOneWrongs === 9) {
+  } else if (playerOneWrongs === 9) {
     guessesLeft.innerText = "Game Over, too many wrong guesses for player one."
     wrongNumber.innerText = '';
     submitNumber.disabled = true;
@@ -187,7 +187,7 @@ function checkPlayerOneGuess() {
     guessCount++;
     playerOneWrongs++;
     playerOneGuessesLeft.innerText = (10-playerOneWrongs);
-    guessesLeft.innerText = "Player One, you have " + (10-playerOneWrongs) + " guesses left.";
+    guessesLeft.innerText = "Player One, you have " + (10 - playerOneWrongs) + " guesses left.";
     if (parsedNum < randomNumber) {
       wrongNumber.innerText = "Too low";
     } else if (parsedNum > randomNumber) {
